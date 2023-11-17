@@ -1,0 +1,61 @@
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./bg.png);
+}
+.container{
+    height: 300px;
+    max-width: 750px;
+    padding: 30px;
+    background-color: #fff;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-family: 'DM Serif Text', serif;
+    font-family: 'Fasthand', cursive;
+    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Serif', serif;
+}
+.container h1{
+    color: gold;
+    font-size: 40px;
+    position: relative;
+}
+.container h1::before{
+    content: '';
+    height: 3px;
+    width: 90px;
+    background-color: deeppink;
+    position: absolute;
+    top:60px;
+    left:280px;
+}
+.input-box{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+}
+.input-box div{
+    max-width: 200px;
+    height: 200px;
+}
+.input-box div label{
+    padding: 10px;
+    font-size: x-large;
+    font-weight: 900;
+    color:deeppink;
+}
+.input-box div input{
+    margin-top: 30px;
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: x-large;
+    text-align: center;
+}

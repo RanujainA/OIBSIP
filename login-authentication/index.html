@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Authentication</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=DM+Serif+Text&family=Fasthand&family=IBM+Plex+Serif:wght@300&family=Libre+Baskerville:wght@400;700&family=Montserrat&family=PT+Serif&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="signinform">
+                <h1>Sign in</h1>
+                <div class="input-box">
+                    <input type="email" placeholder="Email" id="Email" oninput="displayMsg.innerHTML=''" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" id="Password" minlength="8" oninput="displayMsg.innerHTML=''" required>
+                </div>
+                <div class="forgetpass">
+                    <a href="#">Forgot your password?</a>
+                </div>
+                <button onclick="login(event)">Login</button>
+                <p class="displayMsg"></p>
+                <div class="register">
+                    <p>Don't have an account?<a href="#" id="opensignup"> Register</a></p>
+                </div>
+            </div>
+        </form>
+        <form>
+            <div class="signupform">
+                <h1>Sign up</h1>
+                <div class="input-box">
+                    <input type="type" placeholder="Username" id="Username" required>
+                </div>
+                <div class="input-box">
+                    <input type="email" placeholder="Email" id="email" oninput="displaymsg.innerHTML=''" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" id="password" minlength="8" oninput="displaymsg.innerHTML=''" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Retype-Password" id="retypedpassword" minlength="8" required>
+                </div>
+                <p><input type="checkbox" id="check" required>I agree to the terms and conditions</p>
+                <button id="btn" onclick="register(event)">Register</button>
+                <p id="displaymsg"></p>
+                <div class="register">
+                    <p>Have an account?<a href="#" id="opensignin"> Login</a></p>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

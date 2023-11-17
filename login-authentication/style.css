@@ -1,0 +1,161 @@
+body{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    align-items: center;
+    height: 100vh;
+    background-image: url(./bg.png);
+    font-family: 'Caveat', cursive;
+    font-family: 'DM Serif Text', serif;
+    font-family: 'Fasthand', cursive;
+    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Serif', serif;
+}
+
+.signinform{
+    border: 3px solid;
+    padding: 10px 20px;
+    text-align: center;
+    height:450px;
+    width:300px;
+    visibility: visible;
+    display: block;
+}
+.signinform h1,.signupform h1{
+    font-size: 40px;
+    color:gold;
+    font-weight: 900;
+    position: relative;
+}
+.signinform h1::before{
+    content: '';
+    position: absolute;
+    background-color: gold;
+    height: 3px;
+    width: 40px;
+    top:50px;
+    left:140px;
+}
+.signupform h1::before{
+    content: '';
+    position: absolute;
+    background-color: gold;
+    height: 3px;
+    width: 40px;
+    top:50px;
+    left:140px;
+}
+.signinform .input-box,.signupform .input-box{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.input-box input{
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 900;
+}
+.forgetpass{
+    margin-top: 20px;
+}
+.forgetpass a{
+    text-decoration: none;
+    font-size: large;
+    color:aqua;
+    font-weight: 400;
+}
+.signinform button,.signupform button{
+    margin-top: 20px;
+    width: 100%;
+    background-color: gold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 900;
+    font-size: larger;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+.register p,a,.signupform p,a{
+    font-size: large;
+    margin-top: 20px;
+    font-weight: 500;
+}
+.register #opensignup{
+    text-decoration: none;
+    color: aqua;
+    font-weight: 900;
+}
+.signupform a{
+    text-decoration: none;
+    color: aqua;
+    font-weight: 900;
+}
+#opensignup:hover,.forgetpass a:hover,#opensignin:hover{
+    text-decoration: underline;
+}
+.signupform{
+    height: 560px;
+    width: 300px;
+    border: 3px solid;
+    padding: 10px 20px;
+    text-align: center;
+    visibility: hidden;
+    display: none;
+}
+#check{
+    accent-color: gold;
+}
+#displaymsg,.displayMsg{
+    color:red;
+    font-size: x-large;
+    font-weight: 600;
+}
+.header{
+    color: gold;
+    font-size: xx-large;
+}
+.secure-pagemsg{
+    color:aqua;
+    font-size: x-large;
+}
+.btn{
+    padding: 10px 20px;
+    background-color: gold;
+    cursor: pointer;
+    font-size: x-large;
+}
+.container{
+    padding: 20px;
+    text-align: center;
+}
+.signinform button::before,.signupform button::before{
+    content: '';
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    position: absolute;
+    background-color: blue;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.signinform button:hover::before,
+.signinform button:focus::before,
+.signupform button:hover::before,
+.signupform button:focus::before{
+    transform: scaleX(1);
+    transition: transform 300ms ease-in-out;
+}
+.signinform button:hover,
+.signinform button:focus,
+.signupform button:hover,
+.signupform button:focus{
+    color: white;
+    transition: color 300ms ease-in-out;
+}
